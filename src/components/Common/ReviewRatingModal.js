@@ -12,11 +12,12 @@ export default function ReviewRatingModal({ onClose }) {
 
     const handleFormChange = (e) => {
         const { name, value } = e.target;
+        console.log('value', {[name]: value} );
         setForm({ ...form, [name]: value });
     };
     const handleFormSubmit = (key) => {
         // submit review
-
+        
         onClose();
     };
     return (
